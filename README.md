@@ -1,4 +1,5 @@
 MCP Hercules Copilot
+DEMO VIDEO : https://drive.google.com/file/d/1rcr9mcyDzcRWYdzJ1mwv208Lmk5nIo0-/view?usp=drive_link
 
 A LangGraph-based test generation and execution framework that turns your natural language into working Gherkin tests — with optional test execution via TestZeus Hercules, powered by MCP agents and Groq/OpenAI LLMs.
 
