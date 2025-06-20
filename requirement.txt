@@ -1,0 +1,14 @@
+
+testzeus-hercules
+pydantic
+dotenv
+langchain
+langgraph
+langchain-core
+langchain-community
+IPython
+fastapi
+uvicorn
+mcp
+langchain_mcp_adapters
+langchain_groq

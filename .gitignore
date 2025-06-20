@@ -1,0 +1,14 @@
+# Python bytecode
+__pycache__/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
