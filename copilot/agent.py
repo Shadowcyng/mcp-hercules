@@ -26,11 +26,9 @@ async def main():
         llmModel = os.getenv("MODEL")
         if not llmModel:
             raise ValueError("MODEL not set in .env")
-        model = ChatGroq(model=llmModel, temperature=0.1)
+        model = ChatGroq(model=llmModel, temperature=0.1, max_retries=1)
         model = model.bind_tools(tools, tool_choice="auto")
-        max_iterations = 4
-        recursion_limit = 2 * max_iterations + 1
-        agent = create_react_agent(model, tools).with_config(recursion_limit=recursion_limit)
+        agent = create_react_agent(model, tools)
         print("Tools:", [tool.name for tool in tools])
 
         while True:
